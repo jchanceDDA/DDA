@@ -11188,7 +11188,7 @@ body:before {
   z-index: 1;
 }
 
-video.bg-video {
+.bg-video {
   position: fixed;
   top: 50%;
   left: 50%;
