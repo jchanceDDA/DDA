@@ -13,11 +13,14 @@
 </head>
 
 <body>
-    <img class="bg-video" src="assets/img/griffin.jpg" alt="Griffin, GA" />
+    <!-- Background Video-->
+    <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets/mp4/bg.mp4" type="video/mp4" />
+    </video>
     <!-- Content-->
     <div class="masthead">
         <div class="masthead-content">
-            <div class="container-fluid px-4 px-lg-0">
+            <div class="container-fluid px-5 px-lg-0">
                 <img src="assets/img/dda_logo.webp" width="400px">
                 <p class="my-5">For information about City of Griffin Downtown Development Authority programs, please
                     contact:</p>
@@ -40,6 +43,10 @@
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        const el = document.querySelector("video");
+        el.playbackRate = 0.5; // .25x speed
+    </script>
 </body>
 
 </html>
