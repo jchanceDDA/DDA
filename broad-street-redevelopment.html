@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="City of Griffin - Broad Street Redevelopment Project" />
+    <meta name="author" content="City of Griffin DDA - Jason Chance" />
+    <title>City of Griffin DDA - Broad Street Redevelopment</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.css">
+</head>
+
+<body class="content-page">
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a class="site-brand" href="index.html" aria-label="Griffin Downtown Development Authority home">
+                <img src="assets/img/dda_logo_subpage.png" alt="Griffin Downtown Development Authority">
+            </a>
+            <div class="site-nav-links">
+                <a class="site-nav-link" href="index.html">Home</a>
+                <a class="site-nav-link active" href="projects.html">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-shell">
+        <header class="page-hero">
+            <h1>Broad Street Redevelopment</h1>
+            <p class="mb-0">Reimagining Heck Chapel, E. Broad Street, & County Jail</p>
+        </header>
+
+        <section class="page-section">
+            <h2 class="h4">Request for Qualifications</h2>
+            <p>The Griffin Downtown Development Authority is seeking proposals from qualified developers, investors, and
+                teams that will help us reimagine the former Heck Chapel, County Jail, and surrounding E. Broad Street
+                environment in Griffin, Georgia.</p>
+            <p>With the development of the Courtyard by Marriott on the front of the Historic City Hall (HCH) property,
+                we have the opportunity to partner with a first-class development team to come up with a quality project
+                that will accentuate the architectural aesthetics of the area and add to the positive quality of life for
+                Griffin residents.</p>
+            <p class="mb-0">We welcome strong proposals to help us consider the possibilities to help transform the E.
+                Broad Street area.</p>
+        </section>
+
+        <section class="page-section">
+            <h2 class="h4">Gallery</h2>
+            <div class="gallery-group">
+                <h3 class="h5 gallery-group-title">Site Photos</h3>
+                <div class="gallery-grid pswp-gallery" id="site-photos-gallery">
+                    <figure class="gallery-item">
+                        <a href="assets/img/downtown-demo-1.jpg" data-pswp-width="1280" data-pswp-height="853">
+                            <img src="assets/img/downtown-demo-1.jpg" alt="Site photo 1">
+                        </a>
+                    </figure>
+                    <figure class="gallery-item">
+                        <a href="assets/img/downtown-demo-2.jpg" data-pswp-width="1280" data-pswp-height="853">
+                            <img src="assets/img/downtown-demo-2.jpg" alt="Site photo 2">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="gallery-group">
+                <h3 class="h5 gallery-group-title">Heck Chapel</h3>
+                <div class="gallery-grid pswp-gallery" id="heck-chapel-gallery">
+                    <figure class="gallery-item">
+                        <a href="assets/img/downtown-demo-3.jpg" data-pswp-width="1280" data-pswp-height="853">
+                            <img src="assets/img/downtown-demo-3.jpg" alt="Heck Chapel photo 1">
+                        </a>
+                    </figure>
+                    <figure class="gallery-item">
+                        <a href="assets/img/downtown-demo-4.jpg" data-pswp-width="1280" data-pswp-height="853">
+                            <img src="assets/img/downtown-demo-4.jpg" alt="Heck Chapel photo 2">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="gallery-group">
+                <h3 class="h5 gallery-group-title">Historic Courthouse</h3>
+                <div class="gallery-grid pswp-gallery" id="historic-courthouse-gallery">
+                    <figure class="gallery-item">
+                        <a href="assets/img/downtown-demo-5.jpg" data-pswp-width="1280" data-pswp-height="853">
+                            <img src="assets/img/downtown-demo-5.jpg" alt="Historic Courthouse photo 1">
+                        </a>
+                    </figure>
+                    <figure class="gallery-item">
+                        <a href="assets/img/downtown-demo-6.jpg" data-pswp-width="1280" data-pswp-height="853">
+                            <img src="assets/img/downtown-demo-6.jpg" alt="Historic Courthouse photo 2">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="site-footer-copyright mb-0">&copy; 2026 Griffin Downtown Development Authority</p>
+            <p class="site-footer-byline mb-0">Created by <a href="https://jasonchance.com" target="_blank"
+                    rel="noopener noreferrer">jasonchance.com</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script type="module">
+        import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js";
+        document.querySelectorAll(".pswp-gallery").forEach((gallery) => {
+            const lightbox = new PhotoSwipeLightbox({
+                gallery: `#${gallery.id}`,
+                children: "a",
+                pswpModule: () => import("https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.esm.min.js")
+            });
+            lightbox.init();
+        });
+    </script>
+</body>
+
+</html>
