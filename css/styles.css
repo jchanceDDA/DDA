@@ -11634,28 +11634,12 @@ body.content-page:before {
   padding: 1.25rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
   color: #000000;
 }
 
 .site-footer-copyright {
   text-align: left;
-}
-
-.site-footer-byline {
-  text-align: right;
-  color: #6c757d;
-}
-
-.site-footer-byline a {
-  color: #6c757d;
-  font-weight: 500;
-}
-
-.site-footer-byline a:hover,
-.site-footer-byline a:focus {
-  color: #5c636a;
 }
 
 @media (max-width: 767.98px) {
@@ -11676,8 +11660,5 @@ body.content-page:before {
   .site-footer-inner {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .site-footer-byline {
-    text-align: left;
   }
 }
