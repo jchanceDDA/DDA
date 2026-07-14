@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include site-head.html %}
+</head>
+
+<body>
+    {{ content }}
+    {% include site-scripts.html %}
+    {% if page.video_playback_rate %}
+    <script>
+        const el = document.querySelector("video");
+        if (el) {
+            el.playbackRate = {{ page.video_playback_rate }};
+        }
+    </script>
+    {% endif %}
+</body>
+
+</html>
