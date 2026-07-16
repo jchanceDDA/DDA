@@ -11684,6 +11684,14 @@ body.content-page:before {
   color: #888;
   font-style: italic;
 }
+.site-photo-placeholder {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  border-radius: 0.75rem;
+  border: 1px solid #7eb250;
+  margin-bottom: 1rem;
+}
 .site-block-3d {
   margin-top: 2rem;
   padding-top: 1.5rem;
