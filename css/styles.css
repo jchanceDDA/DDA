@@ -11721,6 +11721,13 @@ body.content-page:before {
   color: #2d663d;
 }
 
+.gallery-grid + .gallery-group-title,
+.gallery-download-link + .gallery-group-title {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #c8e0b0;
+}
+
 .gallery-item {
   margin: 0;
   border: 1px solid #7eb250;
@@ -11744,6 +11751,34 @@ body.content-page:before {
   padding: 0.65rem 0.8rem;
   font-size: 0.92rem;
   color: #2d663d;
+}
+
+.gallery-download-link {
+  margin: 0.9rem 0 0;
+}
+
+.gallery-download-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #7eb250;
+  border-radius: 0.5rem;
+  background: #fcfdf9;
+  color: #2d663d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.gallery-download-link a:hover,
+.gallery-download-link a:focus {
+  background: #f5faef;
+  border-color: #589445;
+  color: #589445;
+}
+
+.gallery-download-link svg {
+  flex-shrink: 0;
 }
 
 .site-footer {
