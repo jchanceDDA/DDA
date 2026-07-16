@@ -11775,13 +11775,20 @@ body.content-page:before {
 .polycam-fullscreen-btn:hover {
   background: rgba(0,0,0,0.85);
 }
-:fullscreen .polycam-embed {
+:fullscreen .polycam-embed,
+:-webkit-full-screen .polycam-embed,
+.polycam-embed:fullscreen,
+.polycam-embed:-webkit-full-screen {
   aspect-ratio: unset;
   width: 100vw;
   height: 100vh;
+  max-width: none;
   border-radius: 0;
 }
-:fullscreen .polycam-embed iframe {
+:fullscreen .polycam-embed iframe,
+:-webkit-full-screen .polycam-embed iframe,
+.polycam-embed:fullscreen iframe,
+.polycam-embed:-webkit-full-screen iframe {
   position: absolute;
   inset: 0;
   width: 100%;

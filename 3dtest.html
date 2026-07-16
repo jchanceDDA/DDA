@@ -36,17 +36,34 @@ nav_active: none
 <script>
 function toggleFullscreen() {
     var el = document.getElementById('polycam-wrap');
+    var iframe = document.getElementById('polycam-iframe');
     if (!document.fullscreenElement) {
-        el.requestFullscreen && el.requestFullscreen();
+        iframe.style.maxHeight = 'none';
+        iframe.style.maxWidth = 'none';
+        (el.requestFullscreen || el.webkitRequestFullscreen).call(el);
     } else {
-        document.exitFullscreen && document.exitFullscreen();
+        (document.exitFullscreen || document.webkitExitFullscreen).call(document);
     }
 }
 document.addEventListener('fullscreenchange', function () {
     var btn = document.getElementById('polycam-fs-btn');
+    var iframe = document.getElementById('polycam-iframe');
     if (document.fullscreenElement) {
         btn.querySelector('span').textContent = 'Exit Full Screen';
     } else {
+        iframe.style.maxHeight = '720px';
+        iframe.style.maxWidth = '1280px';
+        btn.querySelector('span').textContent = 'Full Screen';
+    }
+});
+document.addEventListener('webkitfullscreenchange', function () {
+    var btn = document.getElementById('polycam-fs-btn');
+    var iframe = document.getElementById('polycam-iframe');
+    if (document.webkitFullscreenElement) {
+        btn.querySelector('span').textContent = 'Exit Full Screen';
+    } else {
+        iframe.style.maxHeight = '720px';
+        iframe.style.maxWidth = '1280px';
         btn.querySelector('span').textContent = 'Full Screen';
     }
 });
