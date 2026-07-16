@@ -11,8 +11,9 @@ nav_active: none
 
 <section class="page-section">
     <h2 class="h4">Polycam 3D Render</h2>
-    <div class="polycam-embed">
+    <div class="polycam-embed" id="polycam-wrap">
         <iframe
+            id="polycam-iframe"
             src="https://poly.cam/capture/b452d011-7c34-439a-ab51-e8de421f7853/embed"
             title="Polycam capture viewer"
             style="height:100%;width:100%;max-height:720px;max-width:1280px;min-height:280px;min-width:280px"
@@ -20,5 +21,33 @@ nav_active: none
             allowfullscreen
             allow="fullscreen xr-spatial-tracking">
         </iframe>
+        <button class="polycam-fullscreen-btn" id="polycam-fs-btn" onclick="toggleFullscreen()" title="Toggle fullscreen">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <polyline points="9 21 3 21 3 15"></polyline>
+                <line x1="21" y1="3" x2="14" y2="10"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+            </svg>
+            <span>Full Screen</span>
+        </button>
     </div>
 </section>
+
+<script>
+function toggleFullscreen() {
+    var el = document.getElementById('polycam-wrap');
+    if (!document.fullscreenElement) {
+        el.requestFullscreen && el.requestFullscreen();
+    } else {
+        document.exitFullscreen && document.exitFullscreen();
+    }
+}
+document.addEventListener('fullscreenchange', function () {
+    var btn = document.getElementById('polycam-fs-btn');
+    if (document.fullscreenElement) {
+        btn.querySelector('span').textContent = 'Exit Full Screen';
+    } else {
+        btn.querySelector('span').textContent = 'Full Screen';
+    }
+});
+</script>
