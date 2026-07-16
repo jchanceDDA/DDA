@@ -11694,8 +11694,14 @@ body.content-page:before {
   margin-bottom: 0.4rem;
 }
 .site-block-3d-note {
-  color: #888;
-  font-style: italic;
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.85rem;
+}
+.site-block-3d-mobile-link {
+  margin-top: 0.85rem;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .gallery-group + .gallery-group {
