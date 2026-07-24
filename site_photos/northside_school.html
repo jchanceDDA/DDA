@@ -1,0 +1,74 @@
+---
+layout: page
+title: City of Griffin DDA - Northside School Site Photos
+description: City of Griffin - Downtown Development Authority Northside School Site Photos
+nav_active: galleries
+lightgallery: true
+permalink: /site_photos/northside_school
+---
+<header class="page-hero">
+    <h1>Northside School</h1>
+    <p class="mb-0">Site photos for Northside School in the Broad Street redevelopment area.</p>
+</header>
+
+<section class="page-section site-block">
+    <h2 class="site-block-title">Northside School</h2>
+    <p class="site-block-desc">The City of Griffin Downtown Development Authority is partnering with a private developer on an adaptive reuse initiative to reactivate the blighted, historic Northside School as medium-density housing adjacent to the central business district.</p>
+
+    <h3 class="h5 gallery-group-title">Interior</h3>
+    <div class="gallery-grid lightgallery" id="northside-interior-gallery">
+        {% for i in (1..40) %}
+        {% assign idx = i | prepend: '00' | slice: -2, 2 %}
+        <figure class="gallery-item">
+            <a href="{{ '/assets/img/northside-school/interior/full/northside-int-' | append: idx | append: '.jpg' | relative_url }}" data-lg-size="" data-sub-html="Northside School Interior — Photo {{ idx }} of 40">
+                <img src="{{ '/assets/img/northside-school/interior/thumbs/northside-int-' | append: idx | append: '.jpg' | relative_url }}" alt="Northside School interior photo {{ idx }}" loading="lazy">
+            </a>
+        </figure>
+        {% endfor %}
+    </div>
+
+    <p class="gallery-download-link">
+        <a href="{{ '/assets/downloads/northside_interior.zip' | relative_url }}" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Interior Photos (.zip)
+        </a>
+    </p>
+
+    <h3 class="h5 gallery-group-title">Exterior</h3>
+    <div class="gallery-grid lightgallery" id="northside-exterior-gallery">
+        {% for i in (1..18) %}
+        {% assign idx = i | prepend: '00' | slice: -2, 2 %}
+        <figure class="gallery-item">
+            <a href="{{ '/assets/img/northside-school/exterior/full/northside-ext-' | append: idx | append: '.jpg' | relative_url }}" data-lg-size="" data-sub-html="Northside School Exterior — Photo {{ idx }} of 18">
+                <img src="{{ '/assets/img/northside-school/exterior/thumbs/northside-ext-' | append: idx | append: '.jpg' | relative_url }}" alt="Northside School exterior photo {{ idx }}" loading="lazy">
+            </a>
+        </figure>
+        {% endfor %}
+    </div>
+
+    <p class="gallery-download-link">
+        <a href="{{ '/assets/downloads/northside_exterior.zip' | relative_url }}" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Exterior Photos (.zip)
+        </a>
+    </p>
+
+    <h3 class="h5 gallery-group-title">Aerial</h3>
+    <div class="gallery-grid lightgallery" id="northside-aerial-gallery">
+        {% for i in (1..14) %}
+        {% assign idx = i | prepend: '00' | slice: -2, 2 %}
+        <figure class="gallery-item">
+            <a href="{{ '/assets/img/northside-school/aerial/full/northside-aerial-' | append: idx | append: '.jpg' | relative_url }}" data-lg-size="" data-sub-html="Northside School Aerial — Photo {{ idx }} of 14">
+                <img src="{{ '/assets/img/northside-school/aerial/thumbs/northside-aerial-' | append: idx | append: '.jpg' | relative_url }}" alt="Northside School aerial photo {{ idx }}" loading="lazy">
+            </a>
+        </figure>
+        {% endfor %}
+    </div>
+
+    <p class="gallery-download-link">
+        <a href="{{ '/assets/downloads/northside_aerial.zip' | relative_url }}" download>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Aerial Photos (.zip)
+        </a>
+    </p>
+</section>
