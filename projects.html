@@ -4,25 +4,44 @@ title: City of Griffin DDA - Projects
 description: City of Griffin - Downtown Development Authority Projects
 nav_active: projects
 ---
-<header class="page-hero">
-    <h1>Downtown Griffin Projects</h1>
-    <p class="mb-0">Explore active and planned downtown redevelopment initiatives.</p>
-</header>
+<section class="dda-hero dda-hero-accent">
+    <div class="container py-5 py-lg-6">
+        <div class="row g-4 align-items-end">
+            <div class="col-lg-8">
+                <span class="dda-eyebrow">Development Pipeline</span>
+                <h1 class="display-6 fw-bold mb-3">Downtown Griffin Projects</h1>
+                <p class="lead mb-0">Explore active and planned downtown redevelopment initiatives.</p>
+            </div>
+            <div class="col-lg-4">
+                {% include hero-contact-card.html %}
+            </div>
+        </div>
+    </div>
+</section>
 
-<section class="page-section">
-    <h2 class="h4">Project List</h2>
-    <ul class="project-list mb-0">
-        <li>
-            <a class="project-list-link" href="{{ '/broad-street-redevelopment.html' | relative_url }}">
-                <img class="project-list-thumb" src="{{ '/assets/img/downtown-demo-1.jpg' | relative_url }}"
-                    alt="Broad Street Redevelopment thumbnail">
-                <span class="project-list-content">
-                    <span class="project-list-title">Broad Street Redevelopment</span>
-                    <span class="project-list-intro">The Griffin Downtown Development Authority is seeking proposals
-                        from qualified developers, investors, and teams that will help us reimagine the former Heck
-                        Chapel, County Jail, and surrounding E. Broad Street environment in Griffin, Georgia.</span>
-                </span>
-            </a>
-        </li>
-    </ul>
+<section class="dda-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12">
+                <a class="dda-feature-card" href="{{ '/broad-street-redevelopment.html' | relative_url }}">
+                    <div class="row g-0 align-items-stretch">
+                        <div class="col-md-4">
+                            <img class="dda-feature-image" src="{{ '/assets/img/downtown-demo-1.jpg' | relative_url }}"
+                                alt="Broad Street Redevelopment thumbnail">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="p-4 p-lg-5">
+                                <span class="badge bg-primary-subtle text-primary-emphasis mb-3">Featured project</span>
+                                <h2 class="h3 mb-3">Broad Street Redevelopment</h2>
+                                <p class="mb-0 text-muted">The Griffin Downtown Development Authority is seeking
+                                    proposals from qualified developers, investors, and teams that will help us
+                                    reimagine the former Heck Chapel, County Jail, and surrounding E. Broad Street
+                                    environment in Griffin, Georgia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>

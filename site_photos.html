@@ -5,31 +5,47 @@ description: City of Griffin - Downtown Development Authority Site Photos
 nav_active: galleries
 permalink: /site_photos
 ---
-<header class="page-hero">
-    <h1>Site Photos</h1>
-    <p class="mb-0">Photo collections for current downtown redevelopment areas.</p>
-</header>
+<section class="dda-hero dda-hero-accent">
+    <div class="container py-5 py-lg-6">
+        <div class="row g-4 align-items-end">
+            <div class="col-lg-8">
+                <span class="dda-eyebrow">Visual Library</span>
+                <h1 class="display-6 fw-bold mb-3">Site Photos</h1>
+                <p class="lead mb-0">Photo collections for current downtown redevelopment areas.</p>
+            </div>
+            <div class="col-lg-4">
+                {% include hero-contact-card.html %}
+            </div>
+        </div>
+    </div>
+</section>
 
-<section class="page-section">
-    <h2 class="h4">Locations</h2>
-    <ul class="project-list">
-        <li>
-            <a class="project-list-link" href="{{ '/site_photos/heck_chapel' | relative_url }}">
-                <img class="project-list-thumb" src="{{ '/assets/img/heck-chapel/thumbs/heck-14.jpg' | relative_url }}" alt="Heck Chapel thumbnail">
-                <div class="project-list-content">
-                    <span class="project-list-title">Heck Chapel</span>
-                    <p class="mb-0">Historic chapel located in downtown Griffin, GA. Heck Chapel was purchased by the City of Griffin Downtown Development Authority for the purpose of blight elimination and economic development. The property is one of several Broad Street properties that will be included in a public RFQ process in the near future.</p>
-                </div>
-            </a>
-        </li>
-        <li>
-            <a class="project-list-link" href="{{ '/site_photos/historic_courthhouse' | relative_url }}">
-                <img class="project-list-thumb" src="{{ '/assets/img/site-photos/historic-courthouse-placeholder.png' | relative_url }}" alt="Historic Courthouse thumbnail">
-                <div class="project-list-content">
-                    <span class="project-list-title">Historic Courthouse</span>
-                    <p class="mb-0">The historic Spalding County Courthouse, a landmark of downtown Griffin currently being evaluated as part of the DDA's redevelopment planning.</p>
-                </div>
-            </a>
-        </li>
-    </ul>
+<section class="dda-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <a class="dda-photo-card h-100" href="{{ '/site_photos/heck_chapel' | relative_url }}">
+                    <img class="dda-photo-card-image" src="{{ '/assets/img/heck-chapel/exterior/thumbs/heck-ext-07.jpg' | relative_url }}"
+                        alt="Heck Chapel thumbnail">
+                    <div class="p-4">
+                        <h2 class="h4 mb-2">Heck Chapel</h2>
+                        <p class="mb-0 text-muted">Historic chapel located in downtown Griffin, GA. Heck Chapel was
+                            purchased by the City of Griffin Downtown Development Authority for the purpose of blight
+                            elimination and economic development.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="dda-photo-card h-100" href="{{ '/site_photos/historic_courthhouse' | relative_url }}">
+                    <img class="dda-photo-card-image" src="{{ '/assets/img/site-photos/historic-courthouse-placeholder.png' | relative_url }}"
+                        alt="Historic Courthouse thumbnail">
+                    <div class="p-4">
+                        <h2 class="h4 mb-2">Historic Courthouse</h2>
+                        <p class="mb-0 text-muted">The historic Spalding County Courthouse, a landmark of downtown
+                            Griffin currently being evaluated as part of the DDA's redevelopment planning.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>

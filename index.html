@@ -8,11 +8,9 @@ video_playback_rate: 0.5
 <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="{{ '/assets/mp4/bg.mp4' | relative_url }}" type="video/mp4" />
 </video>
-<nav class="landing-menu" aria-label="Main navigation">
-    <a class="landing-menu-link active" href="{{ '/' | relative_url }}">Home</a>
-    <a class="landing-menu-link" href="{{ '/site_photos' | relative_url }}">Site Photos</a>
-    <a class="landing-menu-link" href="{{ '/grants.html' | relative_url }}">Grant Information</a>
-</nav>
+
+{% include subpage-header.html %}
+
 <!-- Content-->
 <div class="masthead">
     <div class="masthead-content">
@@ -30,7 +28,7 @@ video_playback_rate: 0.5
 <!-- Social Icons-->
 <div class="social-icons">
     <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-        <a class="btn btn-light m-3" href="https://www.facebook.com/downtowngriffin"><i class="fab fa-facebook-f fa-2x"></i></a>
-        <a class="btn btn-light m-3" href="https://www.instagram.com/downtowngriffin/"><i class="fab fa-instagram fa-2x"></i></a>
+        <a class="btn btn-light m-3" href="https://www.facebook.com/downtowngriffin"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+        <a class="btn btn-light m-3" href="https://www.instagram.com/downtowngriffin/"><i class="fa-brands fa-instagram fa-2x"></i></a>
     </div>
 </div>

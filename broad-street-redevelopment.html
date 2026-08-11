@@ -5,71 +5,82 @@ description: City of Griffin - Broad Street Redevelopment Project
 nav_active: projects
 lightgallery: true
 ---
-<header class="page-hero">
-    <h1>Broad Street Redevelopment</h1>
-    <p class="mb-0">Reimagining Heck Chapel, E. Broad Street, & County Jail</p>
-</header>
-
-<section class="page-section">
-    <h2 class="h4">Request for Qualifications</h2>
-    <p>The Griffin Downtown Development Authority is seeking proposals from qualified developers, investors, and teams
-        that will help us reimagine the former Heck Chapel, County Jail, and surrounding E. Broad Street environment in
-        Griffin, Georgia.</p>
-    <p>With the development of the Courtyard by Marriott on the front of the Historic City Hall (HCH) property, we
-        have the opportunity to partner with a first-class development team to come up with a quality project that will
-        accentuate the architectural aesthetics of the area and add to the positive quality of life for Griffin
-        residents.</p>
-    <p class="mb-0">We welcome strong proposals to help us consider the possibilities to help transform the E. Broad
-        Street area.</p>
+<section class="dda-hero dda-hero-accent">
+    <div class="container py-5 py-lg-6">
+        <div class="row g-4 align-items-end">
+            <div class="col-lg-8">
+                <span class="dda-eyebrow">Featured Redevelopment Opportunity</span>
+                <h1 class="display-6 fw-bold mb-3">Broad Street Redevelopment</h1>
+                <p class="lead mb-0">Reimagining Heck Chapel, E. Broad Street, and County Jail.</p>
+            </div>
+            <div class="col-lg-4">
+                {% include hero-contact-card.html %}
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="page-section">
-    <h2 class="h4">Gallery</h2>
-    <div class="gallery-group">
-        <h3 class="h5 gallery-group-title">Site Photos</h3>
-        <div class="gallery-grid lightgallery">
-            <figure class="gallery-item">
-                <a href="{{ '/assets/img/downtown-demo-1.jpg' | relative_url }}">
-                    <img src="{{ '/assets/img/downtown-demo-1.jpg' | relative_url }}" alt="Site photo 1">
-                </a>
-            </figure>
-            <figure class="gallery-item">
-                <a href="{{ '/assets/img/downtown-demo-2.jpg' | relative_url }}">
-                    <img src="{{ '/assets/img/downtown-demo-2.jpg' | relative_url }}" alt="Site photo 2">
-                </a>
-            </figure>
+<section class="dda-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="dda-card p-4 p-lg-5 h-100">
+                    <h2 class="h3 mb-3">Request for Qualifications</h2>
+                    <p>The Griffin Downtown Development Authority is seeking proposals from qualified developers,
+                        investors, and teams that will help us reimagine the former Heck Chapel, County Jail, and
+                        surrounding E. Broad Street environment in Griffin, Georgia.</p>
+                    <p>With the development of the Courtyard by Marriott on the front of the Historic City Hall
+                        property, we have the opportunity to partner with a first-class development team to create a
+                        quality project that accentuates the architectural aesthetics of the area and adds to the
+                        quality of life for Griffin residents.</p>
+                    <p class="mb-0">We welcome strong proposals to help us consider the possibilities for transforming
+                        the E. Broad Street area.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="dda-card dda-card-accent p-4 p-lg-5 h-100">
+                    <h2 class="h4 mb-3">RFQ materials</h2>
+                    <p class="mb-3">This page will evolve into the main RFQ information hub, with downloadable documents,
+                        schedules, file links, and supporting content.</p>
+                    <a class="btn btn-dark" href="{{ '/site_photos/heck_chapel' | relative_url }}">View Heck Chapel photos</a>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <div class="gallery-group">
-        <h3 class="h5 gallery-group-title">Heck Chapel</h3>
-        <div class="gallery-grid lightgallery">
-            <figure class="gallery-item">
-                <a href="{{ '/assets/img/downtown-demo-3.jpg' | relative_url }}">
-                    <img src="{{ '/assets/img/downtown-demo-3.jpg' | relative_url }}" alt="Heck Chapel photo 1">
-                </a>
-            </figure>
-            <figure class="gallery-item">
-                <a href="{{ '/assets/img/downtown-demo-4.jpg' | relative_url }}">
-                    <img src="{{ '/assets/img/downtown-demo-4.jpg' | relative_url }}" alt="Heck Chapel photo 2">
-                </a>
-            </figure>
+<section class="dda-section dda-section-muted">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+            <div>
+                <span class="dda-eyebrow">Visual Context</span>
+                <h2 class="h3 mb-0">Site Photos</h2>
+            </div>
         </div>
-    </div>
-
-    <div class="gallery-group">
-        <h3 class="h5 gallery-group-title">Historic Courthouse</h3>
-        <div class="gallery-grid lightgallery">
-            <figure class="gallery-item">
-                <a href="{{ '/assets/img/downtown-demo-5.jpg' | relative_url }}">
-                    <img src="{{ '/assets/img/downtown-demo-5.jpg' | relative_url }}" alt="Historic Courthouse photo 1">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <a class="dda-photo-card h-100" href="{{ '/site_photos/heck_chapel' | relative_url }}">
+                    <img class="dda-photo-card-image" src="{{ '/assets/img/heck-chapel/exterior/thumbs/heck-ext-07.jpg' | relative_url }}"
+                        alt="Heck Chapel thumbnail">
+                    <div class="p-4">
+                        <h3 class="h4 mb-2">Heck Chapel</h3>
+                        <p class="mb-0 text-muted">Historic chapel located in downtown Griffin, GA. Heck Chapel was
+                            purchased by the City of Griffin Downtown Development Authority for the purpose of blight
+                            elimination and economic development.</p>
+                    </div>
                 </a>
-            </figure>
-            <figure class="gallery-item">
-                <a href="{{ '/assets/img/downtown-demo-6.jpg' | relative_url }}">
-                    <img src="{{ '/assets/img/downtown-demo-6.jpg' | relative_url }}" alt="Historic Courthouse photo 2">
+            </div>
+            <div class="col-lg-6">
+                <a class="dda-photo-card h-100" href="{{ '/site_photos/historic_courthhouse' | relative_url }}">
+                    <img class="dda-photo-card-image" src="{{ '/assets/img/site-photos/historic-courthouse-placeholder.png' | relative_url }}"
+                        alt="Historic Courthouse thumbnail">
+                    <div class="p-4">
+                        <h3 class="h4 mb-2">Historic Courthouse</h3>
+                        <p class="mb-0 text-muted">The historic Spalding County Courthouse, a landmark of downtown
+                            Griffin currently being evaluated as part of the DDA's redevelopment planning.</p>
+                    </div>
                 </a>
-            </figure>
+            </div>
         </div>
     </div>
 </section>

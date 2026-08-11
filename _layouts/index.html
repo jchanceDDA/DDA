@@ -5,8 +5,10 @@
     {% include site-head.html %}
 </head>
 
-<body>
-    {{ content }}
+<body class="landing-page">
+    <div class="landing-shell">
+        {{ content }}
+    </div>
     {% include site-scripts.html %}
     {% if page.video_playback_rate %}
     <script>

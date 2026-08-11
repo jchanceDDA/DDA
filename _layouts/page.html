@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     {% include site-head.html %}
 </head>
 
-<body class="content-page">
-    {% include subpage-header.html %}
-    <main class="page-shell">
-        {{ content }}
-    </main>
-    {% include site-footer.html %}
+<body class="dda-subpage">
+    <div class="dda-page-shell bg-white min-vh-100 d-flex flex-column">
+        {% include subpage-header.html %}
+        <main class="dda-main flex-grow-1">
+            {{ content }}
+        </main>
+        {% include site-footer.html %}
+    </div>
     {% include site-scripts.html %}
 </body>
 

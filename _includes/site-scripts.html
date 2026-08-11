@@ -1,4 +1,17 @@
+{% if page.layout == 'page' or page.layout == 'index' %}
+<script src="{{ '/assets/fabrx/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/vendor/lodash/lodash.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/js/html5.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/js/loading-bar.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/vendor/simplebar/dist/simplebar.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/vendor/purecounterjs/dist/purecounter.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/js/masonry.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/vendor/sticky-js/dist/sticky.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/fabrx/js/theme.min.js' | relative_url }}"></script>
+{% else %}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+{% endif %}
 <script src="{{ '/js/scripts.js' | relative_url }}"></script>
 {% if page.lightgallery %}
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>

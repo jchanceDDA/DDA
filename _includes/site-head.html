@@ -4,7 +4,20 @@
 <meta name="author" content="{{ page.author | default: 'City of Griffin DDA - Jason Chance' }}" />
 <title>{{ page.title | default: site.title }}</title>
 <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}" />
-<script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WG11Y1SSHG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WG11Y1SSHG');
+</script>
+<script src="https://kit.fontawesome.com/00adfc2b95.js" crossorigin="anonymous"></script>
+{% if page.layout == 'page' or page.layout == 'index' %}
+<link href="{{ '/assets/fabrx/css/loading-bar.min.css' | relative_url }}" rel="stylesheet" />
+<link href="{{ '/assets/fabrx/vendor/simplebar/dist/simplebar.min.css' | relative_url }}" rel="stylesheet" />
+<link href="{{ '/assets/fabrx/css/theme.min.css' | relative_url }}" rel="stylesheet" />
+{% endif %}
 <link href="{{ '/css/styles.css' | relative_url }}" rel="stylesheet" />
 {% if page.lightgallery %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css" />

@@ -4,12 +4,26 @@ title: City of Griffin DDA - Page Title
 description: City of Griffin - Downtown Development Authority
 nav_active: projects
 ---
-<header class="page-hero">
-    <h1>Page Title</h1>
-    <p class="mb-0">Use this section for a concise one-line summary of the page.</p>
-</header>
+<section class="dda-hero dda-hero-accent">
+    <div class="container py-5 py-lg-6">
+        <div class="row g-4 align-items-end">
+            <div class="col-lg-8">
+                <span class="dda-eyebrow">Template</span>
+                <h1 class="display-6 fw-bold mb-3">Page Title</h1>
+                <p class="lead mb-0">Use this section for a concise one-line summary of the page.</p>
+            </div>
+            <div class="col-lg-4">
+                {% include hero-contact-card.html %}
+            </div>
+        </div>
+    </div>
+</section>
 
-<section class="page-section">
-    <h2 class="h4">Section title</h2>
-    <p class="mb-0">Use clean, short sections like this to add additional page content.</p>
+<section class="dda-section">
+    <div class="container">
+        <div class="dda-card p-4 p-lg-5">
+            <h2 class="h4 mb-3">Section title</h2>
+            <p class="mb-0">Use clean, short sections like this to add additional page content.</p>
+        </div>
+    </div>
 </section>
