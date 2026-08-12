@@ -11839,6 +11839,7 @@ body.landing-page {
   border: 1px solid rgba(17, 24, 39, 0.12);
   border-radius: 0.8rem;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  object-fit: contain;
 }
 
 .dda-notice {
@@ -11861,9 +11862,9 @@ body.landing-page {
 }
 
 .dda-info-notice {
-  background: rgba(42, 91, 85, 0.08);
-  border: 1px solid rgba(42, 91, 85, 0.2);
-  border-left: 4px solid #2a5b55;
+  background: rgba(13, 110, 253, 0.08);
+  border: 1px solid rgba(13, 110, 253, 0.2);
+  border-left: 4px solid #0d6efd;
   border-radius: 0.8rem;
   padding: 1rem 1.1rem;
   margin-bottom: 1rem;
@@ -11875,7 +11876,7 @@ body.landing-page {
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #1f3d31;
+  color: #055160;
   margin-bottom: 0.35rem;
 }
 
@@ -12067,7 +12068,10 @@ body.landing-page {
 
   .dda-rfq-page-image {
     margin-bottom: 1.25rem;
-    max-height: 400px;
+    max-height: none;
+    height: auto;
+    object-fit: contain;
+    aspect-ratio: auto;
   }
 
   .dda-requirements-box {
