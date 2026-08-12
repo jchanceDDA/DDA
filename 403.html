@@ -1,9 +1,44 @@
 ---
-layout: page
+layout: null
 title: Access Forbidden
 description: You don't have permission to access this resource.
 permalink: /403.html
 ---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% include site-head.html %}
+</head>
+
+<body class="dda-subpage">
+    <div class="dda-page-shell bg-white min-vh-100 d-flex flex-column">
+        <header class="fabrx-header dda-header bg-white border-bottom border-gray-200 sticky-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg py-3" aria-label="Main navigation">
+                    <a class="navbar-brand me-4" href="/" aria-label="Griffin Downtown Development Authority home">
+                        <img src="/assets/img/dda_logo_subpage.png" alt="Griffin Downtown Development Authority">
+                    </a>
+                    <button class="navbar-toggler border-0 shadow-none px-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#dda-navbar" aria-controls="dda-navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="dda-navbar">
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/site_photos/">Site Photos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="dda-main flex-grow-1">
 <section class="dda-hero dda-hero-accent">
     <div class="container py-5 py-lg-6">
         <div class="row g-4 align-items-center">
@@ -32,7 +67,7 @@ permalink: /403.html
                 <div class="dda-card p-4 p-lg-5">
                     <h2 class="h3 mb-3">Access Denied</h2>
                     <p class="mb-4">The resource you're trying to access is restricted. Return to the home page to continue browsing.</p>
-                    <a href="{{ '/' | relative_url }}" class="btn btn-dark">
+                    <a href="/" class="btn btn-dark">
                         <i class="fa-utility fa-solid fa-arrow-left me-2"></i>Back to home
                     </a>
                 </div>
@@ -49,3 +84,11 @@ permalink: /403.html
         </div>
     </div>
 </section>
+        </main>
+
+        {% include site-footer.html %}
+    </div>
+    {% include site-scripts.html %}
+</body>
+
+</html>
