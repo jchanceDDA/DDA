@@ -34,15 +34,33 @@ lightgallery: true
                         <p class="mb-0">Completed proposals should be submitted no later than the close of business on the deadline date. Late submissions may not be considered.</p>
                     </div>
 
-                    <div class="dda-info-notice mb-5">
-                        <strong>Required information meeting</strong>
-                        <div class="dda-notice-date">October 8, 2026</div>
-                        <p class="mb-2">All qualified respondents are required to attend an information meeting to review the site, project requirements, and submission guidelines.</p>
+                    <div class="dda-important-dates mb-5">
+                        <strong>Important dates</strong>
+                        <ul class="dda-important-dates-list">
+                            <li>
+                                <span class="dda-important-date">Sept. 8, 2026</span>
+                                <span class="dda-important-label">Public RFQ open</span>
+                            </li>
+                            <li>
+                                <span class="dda-important-date">Oct. 6, 2026</span>
+                                <span class="dda-important-label">Information meeting</span>
+                            </li>
+                            <li>
+                                <span class="dda-important-date">Dec. 8, 2026</span>
+                                <span class="dda-important-label">Proposal deadline</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dda-card dda-card-soft mb-5 p-3 p-lg-4">
+                        <h4 class="h5 mb-3">Public information meeting</h4>
+                        <div class="fw-bold fs-5 mb-2">Tuesday, October 6th, 2026</div>
+                        <p class="mb-2">The DDA will host a public information meeting for interested respondents to review project goals, site conditions, and proposal expectations.</p>
                         <p class="mb-0 fw-semibold">2:00 PM</p>
                         <p class="mb-0">Historic City Hall</p>
                         <p class="mb-0">Main Courtroom</p>
-                        <p class="mb-0">100 South Hill Street</p>
-                        <p class="mb-0">Griffin, Georgia 30224</p>
+                        <p class="mb-0">201 East Solomon St.</p>
+                        <p class="mb-0">Griffin, Georgia 30223</p>
                     </div>
 
                     <div class="dda-requirements-box mt-4">
@@ -57,9 +75,10 @@ lightgallery: true
                     <div class="dda-contact-box mt-5">
                         <h3 class="h5 mb-3">Send submissions to</h3>
                         <p class="mb-1">Griffin Downtown Development Authority</p>
-                        <p class="mb-1">100 South Hill St.</p>
-                        <p class="mb-1">Griffin, GA 30224</p>
+                        <p class="mb-1">201 East Solomon St.</p>
+                        <p class="mb-1">Griffin, GA 30223</p>
                         <p class="mb-0"><a href="tel:7702285356">(770) 228-5356</a></p>
+                        <p class="mb-0"><a id="rfq-contact-email" href="#"></a></p>
                     </div>
                 </div>
                 <div class="col-lg-7 pe-lg-4 order-2 order-lg-1">
@@ -121,6 +140,18 @@ lightgallery: true
         </div>
     </div>
 </section>
+
+<script>
+  (function () {
+    const user = "jstratton";
+    const host = "cityofgriffin.com";
+    const email = user + "@" + host;
+    const link = document.getElementById("rfq-contact-email");
+    if (!link) return;
+    link.href = "mailto:" + email;
+    link.textContent = email;
+  })();
+</script>
 
 <section class="dda-section dda-section-muted">
     <div class="container">
