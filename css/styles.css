@@ -3089,19 +3089,19 @@ fieldset:disabled .btn {
 
 .btn-dark {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #000000;
-  --bs-btn-border-color: #000000;
+  --bs-btn-bg: #2a5555;
+  --bs-btn-border-color: #2a5555;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #262626;
-  --bs-btn-hover-border-color: #1a1a1a;
-  --bs-btn-focus-shadow-rgb: 38, 38, 38;
+  --bs-btn-hover-bg: #244848;
+  --bs-btn-hover-border-color: #224444;
+  --bs-btn-focus-shadow-rgb: 42, 85, 85;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #333333;
-  --bs-btn-active-border-color: #1a1a1a;
+  --bs-btn-active-bg: #224444;
+  --bs-btn-active-border-color: #204040;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #000000;
-  --bs-btn-disabled-border-color: #000000;
+  --bs-btn-disabled-bg: #2a5555;
+  --bs-btn-disabled-border-color: #2a5555;
 }
 
 .btn-outline-primary {
@@ -3224,19 +3224,19 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-dark {
-  --bs-btn-color: #000000;
-  --bs-btn-border-color: #000000;
+  --bs-btn-color: #2a5555;
+  --bs-btn-border-color: #2a5555;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #000000;
-  --bs-btn-hover-border-color: #000000;
-  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-hover-bg: #2a5555;
+  --bs-btn-hover-border-color: #2a5555;
+  --bs-btn-focus-shadow-rgb: 42, 85, 85;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #000000;
-  --bs-btn-active-border-color: #000000;
+  --bs-btn-active-bg: #244848;
+  --bs-btn-active-border-color: #224444;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #000000;
+  --bs-btn-disabled-color: #2a5555;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #000000;
+  --bs-btn-disabled-border-color: #2a5555;
   --bs-gradient: none;
 }
 
@@ -11878,6 +11878,57 @@ body.landing-page {
   text-transform: uppercase;
   color: #055160;
   margin-bottom: 0.35rem;
+}
+
+.dda-important-dates {
+  background: linear-gradient(180deg, rgba(14, 116, 144, 0.08), rgba(14, 116, 144, 0.02));
+  border: 1px solid rgba(14, 116, 144, 0.22);
+  border-left: 4px solid #0f766e;
+  border-radius: 0.8rem;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.dda-important-dates strong {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #115e59;
+  margin-bottom: 0.75rem;
+}
+
+.dda-important-dates-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.dda-important-dates-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.45rem 0.5rem 0.45rem 0.75rem;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0.6rem;
+  border: 1px solid rgba(15, 118, 110, 0.08);
+}
+
+.dda-important-date {
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #0f172a;
+}
+
+.dda-important-label {
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f766e;
 }
 
 .dda-notice-date {
