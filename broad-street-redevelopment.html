@@ -156,49 +156,127 @@ lightgallery: true
 <section class="dda-section dda-section-muted">
     <div class="container">
         <div class="dda-card p-4 p-lg-5">
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+            <div class="mb-4">
                 <div>
                     <span class="dda-eyebrow">RFQ Downloads</span>
                     <h2 class="h3 mb-0">Project files</h2>
                 </div>
-                <a class="btn btn-dark" href="{{ '/assets/downloads/broad-street-rfq-all.zip' | relative_url }}">
-                    <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download all
-                </a>
             </div>
 
-            <div class="dda-download-list">
-                <div class="dda-download-item">
-                    <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/updated-heck-chapel-rfq-package-1.png' | relative_url }}" alt="Updated Heck Chapel RFQ package first page">
-                    <div class="dda-download-meta-block">
-                        <h3 class="dda-download-title">Updated Heck Chapel RFQ Package</h3>
-                        <div class="dda-download-meta">6.8M · PDF</div>
-                    </div>
-                    <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/updated-heck-chapel-rfq-package.pdf' | relative_url }}">
-                        <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
-                    </a>
-                </div>
+            <div class="dda-download-groups">
+                <section class="dda-download-group" aria-labelledby="general-project-files">
+                    <h3 class="dda-download-group-title" id="general-project-files">General project documents</h3>
+                    <div class="dda-download-list">
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/east-broad-street-rfq.png' | relative_url }}" alt="East Broad Street RFQ first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">RFQ for East Broad Street</h4>
+                                <div class="dda-download-meta">1.9M · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/east-broad-street-rfq.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
 
-                <div class="dda-download-item">
-                    <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/heck-chapel-historical-briefing-1.png' | relative_url }}" alt="Heck Chapel historical briefing first page">
-                    <div class="dda-download-meta-block">
-                        <h3 class="dda-download-title">Heck Chapel Historical Briefing</h3>
-                        <div class="dda-download-meta">241K · PDF</div>
-                    </div>
-                    <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/heck-chapel-historical-briefing.pdf' | relative_url }}">
-                        <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
-                    </a>
-                </div>
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/commercial-historic-district.png' | relative_url }}" alt="Commercial Historic District report first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">Commercial Historic District</h4>
+                                <div class="dda-download-meta">493K · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/commercial-historic-district.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
 
-                <div class="dda-download-item">
-                    <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/old-county-courthouse-historical-briefing-1.png' | relative_url }}" alt="Old County Courthouse historical briefing first page">
-                    <div class="dda-download-meta-block">
-                        <h3 class="dda-download-title">Old County Courthouse Historical Briefing</h3>
-                        <div class="dda-download-meta">100K · PDF</div>
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/griffin-1900-area-survey.jpg' | relative_url }}" alt="1900 Griffin area survey map">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">1900 Area Survey</h4>
+                                <div class="dda-download-meta">177K · JPG</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/griffin-1900-area-survey.jpg' | relative_url }}" download>
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
                     </div>
-                    <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/old-county-courthouse-historical-briefing.pdf' | relative_url }}">
-                        <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
-                    </a>
-                </div>
+                </section>
+
+                <section class="dda-download-group" aria-labelledby="heck-chapel-files">
+                    <h3 class="dda-download-group-title" id="heck-chapel-files">Heck Chapel</h3>
+                    <div class="dda-download-list">
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/heck-chapel-historical-briefing-1.png' | relative_url }}" alt="Heck Chapel historical briefing first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">Heck Chapel Historical Briefing</h4>
+                                <div class="dda-download-meta">241K · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/heck-chapel-historical-briefing.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
+
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/heck-chapel-environmental-services-report.png' | relative_url }}" alt="Heck Chapel Environmental Services Report first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">Environmental Services Report — 202 E Broad Street</h4>
+                                <div class="dda-download-meta">19.1M · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/heck-chapel-environmental-services-report.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
+
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/heck-chapel-structural-observation-report.png' | relative_url }}" alt="Heck Chapel Structural Observation Report first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">Structural Observation Report &amp; Photos — 202 Broad Street Church</h4>
+                                <div class="dda-download-meta">12.2M · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/heck-chapel-structural-observation-report.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dda-download-group" aria-labelledby="county-jail-files">
+                    <h3 class="dda-download-group-title" id="county-jail-files">County Jail</h3>
+                    <div class="dda-download-list">
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/old-county-jail-historical-briefing-1.png' | relative_url }}" alt="Old County Jail historical briefing first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">Old County Jail Historical Briefing</h4>
+                                <div class="dda-download-meta">100K · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/old-county-jail-historical-briefing.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
+
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/county-jail-phase-i-environmental-site-assessment.png' | relative_url }}" alt="Phase I Environmental Site Assessment first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">232 E Broad Street — Phase I Environmental Site Assessment</h4>
+                                <div class="dda-download-meta">67.1M · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/county-jail-phase-i-environmental-site-assessment.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
+
+                        <div class="dda-download-item">
+                            <img class="dda-file-thumbnail" src="{{ '/assets/img/rfq-downloads/county-jail-pre-renovation-acm-lbp-survey.png' | relative_url }}" alt="Pre-Renovation ACM and LBP Survey first page">
+                            <div class="dda-download-meta-block">
+                                <h4 class="dda-download-title">Pre-Renovation ACM/LBP Survey</h4>
+                                <div class="dda-download-meta">8.5M · PDF</div>
+                            </div>
+                            <a class="btn btn-outline-dark dda-download-button" href="{{ '/assets/downloads/county-jail-pre-renovation-acm-lbp-survey.pdf' | relative_url }}">
+                                <i class="fa-utility fa-semibold fa-circle-arrow-down me-2"></i>Download
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>

@@ -11989,6 +11989,21 @@ body.landing-page {
   color: #111827;
 }
 
+.dda-download-groups {
+  display: grid;
+  gap: 2rem;
+}
+
+.dda-download-group-title {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #315f43;
+}
+
 .dda-download-list {
   display: flex;
   flex-direction: column;
